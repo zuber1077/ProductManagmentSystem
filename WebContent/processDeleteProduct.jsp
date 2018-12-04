@@ -1,12 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+<%@page import="dao.ProjectManagmentDAO"%>
+<%@page import="pojo.Product"%>
 
-</body>
-</html>
+<%
+
+String productId = request.getParameter("prodId");
+
+int status = ProjectManagmentDAO.deleteProduct(productId);
+if(status == 1)
+{
+	response.sendRedirect("viewProducts.jsp"); 
+}
+else
+{
+	response.sendRedirect("error.jsp"); 
+}
+
+%>

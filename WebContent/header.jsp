@@ -20,7 +20,7 @@
 			<li><a href="home.jsp">Home</a></li>
 			<li><a href="addProduct.jsp">Add Product</a></li>
 			<li><a href="viewProducts.jsp">View Products</a></li>
-			<li><a href="searchProduct.jsp">Search Product</a></li>
+			<li><a href="searchProducts.jsp">Search Product</a></li>
 			<li style="float:right;margin-right:10px"><a href="logout.jsp">Logout</a></li>
 		</ul>
 	</nav>
